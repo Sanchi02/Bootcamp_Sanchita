@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CricketResult">
+    <output-path>C:/Tomcat8/webapps</output-path>
+    <root id="archive" name="CricketResult.war">
+      <element id="javaee-facet-resources" facet="CricketResult/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CricketResult" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

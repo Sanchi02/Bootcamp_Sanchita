@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="employee" class="com.cdk.xmlExample.Employee">
+       </bean>
+
+    <!-- To set value using constructor == Constructor based injection-->
+    <bean id="e1" class="com.cdk.xmlExample.Employee">
+       <!-- <constructor-arg>
+            <value>101</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value>Joey</value>
+        </constructor-arg>
+-->
+        <constructor-arg index="1">
+            <value>Monica</value>
+        </constructor-arg>
+        <constructor-arg index="0">
+            <value>54345</value>
+        </constructor-arg>
+
+        <!-- property == to set value using setter == Setter based injection-->
+
+       <!-- <property name="name">
+            <value>Chandler</value>
+        </property>
+        -->
+    </bean>
+</beans>
